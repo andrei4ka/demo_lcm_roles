@@ -5,7 +5,7 @@ class lcm_roles::khui {
   $test_array = hiera_array('test_array', [])
   $test_hash = hiera_hash('test_hash', {})
 
-  file { 'demo' :
+  file { 'demo1' :
     ensure  => 'present',
     path    => '/tmp/khui.txt',
     content => template('lcm_roles/demo.txt.erb'),
